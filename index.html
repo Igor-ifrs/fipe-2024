@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Tabela FIPE</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CONSULTA TABELA FIPE</h1>
+        <select name="tipos-veiculo" id="tiposVeiculo">
+            <option value="none" selected disabled >Escolha o tipo de veículo</option> 
+            <option value="carros">Carro</option>
+            <option value="motos">Moto</option>
+            <option value="caminhoes">Caminhão</option>
+        </select>
+    
+        <select hidden name="marcas-veiculo" id="marcasVeiculo">
+            <option value="none" selected disabled >Selecione a marca do veículo</option>               
+        </select>
+    
+        <select hidden name="modelos-veiculo" id="modelosVeiculo">
+            <option value="none" selected disabled >Selecione a modelo do veículo</option>              
+        </select>
+    
+        <select hidden name="ano-veiculo" id="anoVeiculo">
+            <option value="none" selected disabled >Selecione o ano do veículo</option>                 
+        </select>
+        <div hidden id="result">            
+        </div>
+        <button hidden name="reset">NOVA CONSULTA</button>
+    </div>
+
+    
+</body>
+<script src="fipe.js"></script>
+</html>
