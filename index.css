@@ -8,11 +8,12 @@
 }
 select {
     background-color: transparent;
-    width: 50%;
+    width: 100%;
     cursor: pointer;
     padding: 5px;
     text-transform: uppercase;
 }
+
 .container {
     display: flex;
     align-items: center;
@@ -21,12 +22,21 @@ select {
     height: 100vh;
     padding-top: 50px;
 }
-#result {
+.container-fipeApp {
+    width: 60%;
     border: 1px solid gray;
-    width: 50%;
+}
+@media (max-width: 600px) {
+    .container-fipeApp {
+        width: 95%;
+    }
+}
+[name="resultado"] {
+    border: 1px solid gray;
+    width: 100%;
     padding: 30px;
 }
-#result p:last-of-type {
+[name="resultado"] p:last-of-type {
     padding-top: 10px;
     font-size: 30px;
     font-weight: bold;
@@ -41,4 +51,7 @@ button[name="reset"] {
 }
 h1 {
     font-size: 200%;
+}
+*:disabled {
+    cursor: auto;
 }
